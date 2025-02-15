@@ -1,0 +1,27 @@
+{
+    "dashboard": {
+      "panels": [
+        {
+          "type": "graph",
+          "title": "Data Drift Score",
+          "targets": [
+            {
+              "expr": "data_drift_score",
+              "legendFormat": "Drift Score"
+            }
+          ]
+        },
+        {
+          "type": "singlestat",
+          "title": "Model Accuracy",
+          "targets": [
+            {
+              "expr": "model_accuracy",
+              "legendFormat": "Accuracy"
+            }
+          ]
+        }
+      ]
+    },
+    "overwrite": true
+  }
